@@ -1,0 +1,73 @@
+.team_block
+	background: #FFFFFF
+	text-align: center
+	color: #222222
+	padding: 150px 80px 0px 80px
+	&:after
+		content: ''
+		display: block
+		clear: both
+.caption_team
+	text-transform: uppercase
+	margin-bottom: 100px
+.under_capt
+	margin-bottom: 50px
+.photo_collective
+	+column(3/12)
+.scotch
+	display: inline-block
+	background: #ffffff
+	position: relative
+	top: -30px
+	padding: 10px 15px
+	font-weight: bolder
+.name
+	color: $accent-color1
+	text-transform: uppercase
+	font-weight: bolder
+	font-size: 1.7rem
+	margin-top: 0
+@media screen and(max-width: 1250px)
+	.team_block
+		padding: 150px 30px 0 30px
+	.collective_img
+		width: 200px
+	.scotch
+		font-size: 1.0rem
+		top: -20px
+	.name
+		font-size: 1.2rem
+@media screen and( max-width: 920px)
+	.team_block
+		padding: 50px 30px 0 30px
+	.caption_team
+		font-size: 2.5rem
+		margin-bottom: 30px
+	.under_capt
+		font-size: 20px
+	.collective_img
+		width: 150px
+@media screen and(max-width: 750px)
+	.photo_collective
+		width: 35%
+		&:nth-child(even)
+			float: right
+			margin-right: 3%
+		&:nth-child(odd)
+			margin-left: 3%
+			margin-right: 0
+@media screen and(max-width: 530px)
+	.photo_collective
+		display: block
+		width: 50%
+		&:nth-child(even)
+			float: none
+			margin-right: 0
+			margin-left: 25%
+		&:nth-child(odd)
+			float: none
+			margin-left: 25%
+			margin-right: 0
+@media screen and(max-width: 370px)
+	.scotch
+		position: static

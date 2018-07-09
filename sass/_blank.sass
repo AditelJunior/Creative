@@ -1,0 +1,67 @@
+.blanking_block
+	background: url(../img/bgblank.jpg)
+	text-align: center
+	padding: 150px 200px 100px 200px
+.caption_blank
+	margin-top: 0px
+	margin-bottom: 100px
+	text-transform: uppercase
+.blank
+	display: inline-block
+.blank_test
+	color: white
+	border: 1px solid white
+	background-color: rgba(66,76,97, 0.1)
+	padding: 7px
+	font-size: 1.2rem
+	+column(4/12)
+	margin-bottom: 30px
+	text-align: left
+.input_phone
+	margin-right: 0px
+.message
+	width: 100%
+	+column(12/12)
+	text-align: left
+.blank_top
+	width: 100%
+.btn_submit
+	display: inline-block
+.btn_link
+	padding: 15px 30px
+	background: $accent-color1
+	text-decoration: none
+	text-transform: uppercase
+	color: white
+	font-size: 1.5rem
+	&:hover
+		color: #ffffff
+		text-decoration: none
+		border-bottom: 5px solid $accent-color1
+		text-align: center
+		padding: 18px 33px
+		transition: padding 0.2s
+	&:visited
+		text-decoration: none
+		color: #ffffff
+@media screen and(max-width: 992px)
+	.caption_blank
+		margin-bottom: 60px
+		font-size: 30px
+	.blanking_block
+		padding: 60px 100px 70px 100px
+@media screen and(max-width: 820px)
+	.caption_blank
+		font-size: 20px
+		margin-bottom: 30px
+	.blanking_block
+		padding: 30px 70px
+	.btn_link
+		padding: 10px 20px
+	.blank_test
+		display: block
+		float: none
+		width: 100%
+@media screen and(max-width: 450px)
+	.caption_blank
+		font-size: 15px

@@ -1,0 +1,75 @@
+.wrap_feature
+	background: $accent-color1
+	text-align: center
+	padding-top: 120px
+	padding-bottom: 100px
+.feature_block
+	display: flex
+.feature
+	margin-right: 50px
+	font-size: 1.1rem
+.feature .fa
+	font-size: 30px
+.feature_fourth
+	margin-right: 0
+.circle_bg
+	background: rgba(243,243,243,0.3)
+	display: inline-block
+	height: 100px
+	width: 100px
+	border-radius: 50%
+	line-height: 110px
+	text-align: center
+.cool_agency
+	text-transform: uppercase
+	font-size: 3rem
+	display: block
+	width: 100%
+	margin: 0 auto 80px auto
+	position: relative
+.feature_cpt
+	font-size: 2.2rem
+@media screen and(max-width: 992px)
+	.wrap_feature
+		padding-top: 80px
+		padding-bottom: 50px
+	.feature .fa
+		font-size: 18px
+	.circle_bg
+		height: 50px
+		width: 50px
+		line-height: 55px
+	.cool_agency
+		font-size: 2.5rem
+		margin: 0 auto 40px auto
+	.feature_cpt
+		font-size: 1.8rem
+@media screen and(max-width: 750px)
+	.wrap_feature
+		padding-top: 30px
+		padding-bottom: 30px
+	.feature_block
+		display: inline-block
+	.feature
+		width: 35%
+		margin-right: 0
+		margin-bottom: 30px
+		&:nth-child(even)
+			float: left
+			margin-left: 4%
+		&:nth-child(odd)
+			float: right
+			margin-right: 4%
+@media screen and(max-width: 530px)
+	.wrap_feature
+		padding: 3% 3%
+	.feature
+		width: 100%
+		margin-right: 0
+		margin-bottom: 30px
+		&:nth-child(even)
+			float: none
+			margin-left: 0
+		&:nth-child(odd)
+			float: none
+			margin-right: 0

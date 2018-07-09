@@ -1,0 +1,49 @@
+.pen_block
+	background: $accent-color1
+	padding: 80px 100px
+	display: inline-block
+	vertical-align: middle
+.right_block,
+.left_block
+	+column(6/12)
+	font-size: 1.2rem
+	.fa
+		font-size: 65px
+		+column(2/12)
+		margin-top: 15px
+	p
+		+column(5/6)
+@media screen and(max-width: 992px)
+	.pen_block
+		padding: 50px 50px
+		text-align: justify
+	.right_block
+		margin-right: 90px
+		margin-left: 40px
+	.left_block,
+	.right_block
+		width: 40%
+		.fa
+			float: none
+		p
+			width: 100%
+@media screen and(max-width: 780px)
+	.right_block
+		margin-right: 0px
+	.left_block,
+	.right_block
+		float: none
+		margin-bottom: 30px
+		margin-left: 25%
+@media screen and(max-width: 620px)
+	.left_block,
+	.right_block
+		width: 100%
+		margin: 0
+		.fa
+			font-size: 50px
+@media screen and(max-width: 620px)
+	.left_block,
+	.right_block
+		.fa
+			font-size: 40px
